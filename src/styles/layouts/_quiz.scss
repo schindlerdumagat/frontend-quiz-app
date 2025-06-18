@@ -1,0 +1,17 @@
+body {
+    background-color: var(--clr-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/src/assets/images/pattern-background-mobile-light.svg");
+    
+    @media screen and (min-width: 48em) {
+        background-size: auto;
+        background-image: url("/src/assets/images/pattern-background-tablet-light.svg");
+    }
+
+    @media screen and (min-width: 90em) {
+        background-size: cover;
+        background-image: url("/src/assets/images/pattern-background-desktop-light.svg");
+    }
+
+}

@@ -1,6 +1,12 @@
+import Button from "./components/Button";
+import ThemeToggle from "./components/ThemeToggle";
+
 function App() {
 
-  return <h1 className="title">Hello World!</h1>;
+  return <>
+    {/* <Button>Submit Answer</Button> */}
+    <ThemeToggle />
+  </>
 }
 
 export default App;

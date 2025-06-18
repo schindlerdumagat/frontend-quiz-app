@@ -1,5 +1,4 @@
-.title {
-    color: yellow;
-    background-color: violet;
-    text-align: center;
-}
+@use 'abstracts';
+@use 'base';
+@use 'layouts';
+@use 'components';
