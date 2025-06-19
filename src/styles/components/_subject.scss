@@ -1,0 +1,7 @@
+.subject {
+    display: flex;
+    align-items: center;
+    gap: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
+    padding: clamp(var(--space-200), 0.4286rem + 1.1905vw, var(--space-200));
+    border: transparent;
+}

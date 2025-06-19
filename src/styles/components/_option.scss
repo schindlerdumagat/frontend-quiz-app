@@ -1,0 +1,75 @@
+.option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
+    padding: clamp(var(--space-200), 0.4286rem + 1.1905vw, var(--space-300));
+    border: 3px solid transparent;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px 0 rgba(#8FA0C1, 14%);
+    width: 100%;
+    cursor: pointer;
+
+    &__letter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        width: clamp(40px, 24.7328px + 4.0712vw, 56px);
+        height: clamp(40px, 24.7328px + 4.0712vw, 56px);
+        background-color: var(--clr-grey-50);
+        color: var(--clr-grey-500);
+    }
+
+    &:focus {
+        outline-color: var(--clr-purple-600);
+        border-color: var(--clr-purple-600);
+    }
+
+
+    &::after {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: clamp(32px, 24.3664px + 2.0356vw, 40px);
+        height: clamp(32px, 24.3664px + 2.0356vw, 40px);
+        right: 16px;
+    }
+
+    &--selected, &:hover:not(:disabled) {
+        border-color: var(--clr-purple-600);
+
+        & > .option__letter {
+            color: var(--clr-white);
+            background-color: var(--clr-purple-600);
+        }
+    }
+
+    &--correct {
+        border-color: var(--clr-green-500);
+        & > .option__letter {
+            color: var(--clr-white);
+            background-color: var(--clr-green-500);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("/src/assets/images/icon-correct.svg");
+        }
+    }
+
+    &--error {
+        border-color: var(--clr-red-500);
+        & > .option__letter {
+            color: var(--clr-white);
+            background-color: var(--clr-red-500);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("/src/assets/images/icon-error.svg");
+        }
+    }
+}

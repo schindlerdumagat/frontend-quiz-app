@@ -63,6 +63,9 @@ input, button,
 textarea, select {
   font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
