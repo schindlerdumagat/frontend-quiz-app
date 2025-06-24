@@ -1,0 +1,38 @@
+.quiz {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--space-500), -3.7857rem + 13.0952vw, var(--space-1600));
+    
+    &__number {
+        font-size: var(--text-sm);
+        font-style: italic;
+        color: var(--clr-grey-500);
+        margin-block-end: clamp(var(--space-200), 0.5229rem + 2.0356vw, var(--space-300));
+    }
+
+    &__question {
+        font-size: var(--text-lg);
+        margin-block-end: clamp(var(--space-300), 0.5458rem + 4.0712vw, var(--space-500));
+    }
+
+    &__options {
+        counter-reset: item;
+        list-style: none;
+        padding-left: 1.2em; /* tweak to your needs */
+    }
+
+    &__option-item {
+        counter-increment: item;
+        position: relative;
+
+        &::before {
+            content: counter(item, upper-alpha) " "; /* space but no period! */
+            position: absolute;
+            left: 20px;
+            top: 34%;
+            font-weight: bold;
+            color: var(--clr-grey-500);
+            z-index: 1;
+        }
+    }
+}

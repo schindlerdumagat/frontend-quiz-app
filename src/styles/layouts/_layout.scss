@@ -1,0 +1,61 @@
+body {
+    background-color: var(--clr-grey-50);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/pattern-background-mobile-light.svg");
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-200) var(--space-300);
+    width: 100%;
+    
+}
+
+.header .toggle-container {
+    margin-inline-start: auto;
+}
+
+main {
+    padding: var(--space-400) var(--space-300);
+}
+
+@media screen and (min-width: 48em) {
+
+    body {
+        background-size: auto;
+        background-image: url("/images/pattern-background-tablet-light.svg");
+    }
+
+    .header {
+        padding: 0;
+        margin-block-start:  clamp(3.375rem, 0.3036rem + 6.3988vw, 6.0625rem);
+        margin-block-end:  clamp(2.9375rem, -0.7768rem + 7.7381vw, 6.1875rem);
+    }
+
+    .main {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 90em) {
+
+    body {
+        background-size: cover;
+        background-image: url("/images/pattern-background-desktop-light.svg");
+    }
+
+    .layout {
+        max-width: 72.313rem;
+    }
+}
