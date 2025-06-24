@@ -11,21 +11,21 @@ export default function Quiz() {
           Which of these color contrast ratios defines the minimum WCAG 2.1
           Level AA requirement for normal text?
         </p>
-        <ProgressBar />
+        <ProgressBar value={60} />
       </div>
       <div className="quiz__option-container">
-        <ol className="quiz__options" type="A">
+        <ol className="quiz__options" role="list">
           <li className="quiz__option-item">
-            <Option letter={"A"}>4.5:1</Option>
+            <Option letter="A" state="selected">4.5:1</Option>
           </li>
           <li className="quiz__option-item">
-            <Option>4.5:1</Option>
+            <Option letter="B">4.5:1</Option>
           </li>
           <li className="quiz__option-item">
-            <Option>4.5:1</Option>
+            <Option letter="C">4.5:1</Option>
           </li>
           <li className="quiz__option-item">
-            <Option>4.5:1</Option>
+            <Option letter="D">4.5:1</Option>
           </li>
         </ol>
         <Button>Submit Answer</Button>

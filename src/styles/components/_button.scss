@@ -3,8 +3,9 @@
     background-color: var(--clr-purple-600);
     border: 1px solid var(--clr-purple-600);
     border-radius: clamp(12px, 7.7746px + 1.1268vw, 24px);
-    padding: clamp(var(--space-200), 0.6479rem + 1.5023vw, var(--space-400));
+    padding: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
     cursor: pointer;
+    width: 100%;
 
     &:hover {
         opacity: 50%;

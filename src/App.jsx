@@ -5,7 +5,7 @@ import Quiz from "./pages/Quiz";
 function App() {
   return (
     <Layout>
-      <Home />
+      <Quiz />
     </Layout>
   );
 }

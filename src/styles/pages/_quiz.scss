@@ -12,27 +12,36 @@
 
     &__question {
         font-size: var(--text-lg);
+        line-height: 1.2;
         margin-block-end: clamp(var(--space-300), 0.5458rem + 4.0712vw, var(--space-500));
     }
 
     &__options {
-        counter-reset: item;
-        list-style: none;
-        padding-left: 1.2em; /* tweak to your needs */
+        display: flex;
+        flex-direction: column;
+        gap: clamp(var(--space-200), 0.5229rem + 2.0356vw, var(--space-300));
+        margin-bottom: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
     }
+}
 
-    &__option-item {
-        counter-increment: item;
-        position: relative;
+@media screen and (min-width: 90em) {
+    .quiz {
+        flex-direction: row;
 
-        &::before {
-            content: counter(item, upper-alpha) " "; /* space but no period! */
-            position: absolute;
-            left: 20px;
-            top: 34%;
-            font-weight: bold;
-            color: var(--clr-grey-500);
-            z-index: 1;
+        &__question-container, &__option-container {
+            flex: 1;
+        }
+
+        &__option-container {
+            flex: 1.2;
+        }
+
+        &__question {
+            margin-bottom: var(--space-2300);
+        }
+
+        &__options {
+            gap: var(--space-200);
         }
     }
 }
