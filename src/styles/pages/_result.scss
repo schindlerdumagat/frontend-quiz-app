@@ -1,0 +1,53 @@
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--space-500), 1.0687rem + 6.1069vw, var(--space-800));
+
+    &__title, &__body {
+        flex: 1;
+    }
+
+    &__title {
+        font-size: var(--text-xl);
+        font-weight: 300;
+    }
+
+    &__title-highlight {
+        display: block;
+        font-weight: 500;
+    }
+
+    &__score-container {
+        text-align: center;
+        padding: clamp(var(--space-400), 1.0458rem + 4.0712vw, var(--space-600));
+        margin-block-end: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
+    }
+
+    &__score {
+        font-size: var(--text-2xl);
+        margin-block-start: clamp(var(--space-200), -0.4313rem + 6.1069vw, var(--space-500));
+        margin-block-end: var(--space-200);
+    }
+
+    &__description {
+        color: var(--clr-grey-500);
+    }
+
+}
+
+
+@media screen and (min-width: 90em) {
+    .result {
+        
+        &__description {
+            font-size: var(--text-sm);
+        }
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .result {
+        flex-direction: row;
+        gap: var(--space-1800);
+    }
+}

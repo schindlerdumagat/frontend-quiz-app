@@ -14,18 +14,18 @@ export default function Quiz() {
         <ProgressBar value={60} />
       </div>
       <div className="quiz__option-container">
-        <ol className="quiz__options" role="list">
+        <ol className="quiz__options" role="list" type="A">
           <li className="quiz__option-item">
             <Option letter="A" state="selected">4.5:1</Option>
           </li>
           <li className="quiz__option-item">
-            <Option letter="B">4.5:1</Option>
+            <Option letter="B" state="correct">4.5:1</Option>
           </li>
           <li className="quiz__option-item">
-            <Option letter="C">4.5:1</Option>
+            <Option letter="C" state="error">4.5:1</Option>
           </li>
           <li className="quiz__option-item">
-            <Option letter="D">4.5:1</Option>
+            <Option letter="D" state="answer">4.5:1</Option>
           </li>
         </ol>
         <Button>Submit Answer</Button>

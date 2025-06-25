@@ -59,6 +59,12 @@
         }
     }
 
+    &--answer::after {
+        content: "";
+        position: absolute;
+        background-image: url("/images/icon-correct.svg");
+    }
+
     &--error {
         border-color: var(--clr-red-500);
         & > .option__letter {
