@@ -16,12 +16,27 @@
         margin-block-end: clamp(var(--space-300), 0.5458rem + 4.0712vw, var(--space-500));
     }
 
+    &__option-container {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
+    }
+
     &__options {
         display: flex;
         flex-direction: column;
         gap: clamp(var(--space-200), 0.5229rem + 2.0356vw, var(--space-300));
         margin-bottom: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
     }
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-100);
+    color: var(--clr-red-500);
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 90em) {

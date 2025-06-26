@@ -26,6 +26,10 @@
         border-color: var(--clr-purple-600);
     }
 
+    &:disabled {
+        cursor: auto;
+    }
+
 
     &::after {
         background-repeat: no-repeat;

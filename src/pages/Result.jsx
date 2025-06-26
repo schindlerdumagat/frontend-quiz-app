@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import Title from "../components/Title";
 
-export default function Result() {
+export default function Result({ score, onPlayAgain }) {
   return (
     <div className="result">
       <h2 className="result__title">
@@ -14,10 +14,10 @@ export default function Result() {
             title="Accessibilty"
             imageSrc="/images/icon-accessibility.svg"
           />
-          <p className="result__score">8</p>
+          <p className="result__score">{score}</p>
           <p className="result__description">out of 10</p>
         </div>
-        <Button>Play Again</Button>
+        <Button onButtonClick={onPlayAgain}>Play Again</Button>
       </div>
     </div>
   );

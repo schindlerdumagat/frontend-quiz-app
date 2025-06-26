@@ -1,6 +1,16 @@
 import Subject from "../components/Subject";
 
-export default function Home() {
+export default function Home({ subjects, onSubjectClick }) {
+  const subjectList = subjects.map((subject, index) => {
+    return (
+      <li key={subject.title} className="home__subject-item">
+        <Subject imageSrc={subject.icon} onSubjectClick={() => onSubjectClick(index)}>
+          {subject.title}
+        </Subject>
+      </li>
+    );
+  });
+
   return (
     <div className="home">
       <div className="home__title-container">
@@ -11,20 +21,7 @@ export default function Home() {
         <p className="home__description">Pick a subject to get started.</p>
       </div>
       <ul className="home__subjects" role="list">
-        <li className="home__subject-item">
-          <Subject imageSrc="/images/icon-html.svg">HTML</Subject>
-        </li>
-        <li className="home__subject-item">
-          <Subject imageSrc="/images/icon-css.svg">CSS</Subject>
-        </li>
-        <li className="home__subject-item">
-          <Subject imageSrc="/images/icon-js.svg">Javascript</Subject>
-        </li>
-        <li className="home__subject-item">
-          <Subject imageSrc="/images/icon-accessibility.svg">
-            Accessibility
-          </Subject>
-        </li>
+        {subjectList}
       </ul>
     </div>
   );

@@ -1,11 +1,11 @@
 import Title from "../components/Title";
 import ThemeToggle from "../components/ThemeToggle";
 
-export default function Layout({ children }) {
+export default function Layout({ children, subject }) {
   return (
     <div className="layout">
       <header className="header">
-        <Title title="Accessibility" imageSrc="/images/icon-accessibility.svg" />
+        {subject && <Title title={subject.title} imageSrc={subject.icon} />}
         <ThemeToggle />
       </header>
       <main className="main">
