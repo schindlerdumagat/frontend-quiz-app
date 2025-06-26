@@ -11,7 +11,7 @@ function App() {
   const [score, setScore] = useState(null);
 
   useEffect(() => {
-    fetch("/src/data/data.json")
+    fetch("/data/data.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch data.");
@@ -44,8 +44,8 @@ function App() {
       {data && !selectedSubject && data.length !== 0 && (
         <Home subjects={data} onSubjectClick={handleSubjectClick} />
       )}
-      {selectedSubject && !score && <Quiz questions={selectedSubject.questions} onViewScoreClick={handleViewScore} />}
-      {selectedSubject && score && <Result score={score} onPlayAgain={handlePlayAgain}/>}
+      {selectedSubject && score === null && <Quiz questions={selectedSubject.questions} onViewScoreClick={handleViewScore} />}
+      {selectedSubject && score !== null && <Result subject={selectedSubject} score={score} onPlayAgain={handlePlayAgain}/>}
     </Layout>
   );
 }
