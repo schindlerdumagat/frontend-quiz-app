@@ -49,5 +49,6 @@
     .result {
         flex-direction: row;
         gap: var(--space-1800);
+        margin-block-start: var(--space-800);
     }
 }

@@ -41,6 +41,7 @@
     .home {
         flex-direction: row;
         gap: var(--space-1600);
+        margin-block-start: var(--space-1600);
 
         &__subjects {
             gap: var(--space-200);

@@ -17,7 +17,8 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: var(--space-200) var(--space-300);
+    padding-block: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
+    padding-inline:  var(--space-300);
     width: 100%;
     
 }
@@ -39,13 +40,12 @@ main {
     }
 
     .header {
-        padding: 0;
-        margin-block-start:  clamp(3.375rem, 0.3036rem + 6.3988vw, 6.0625rem);
-        margin-block-end:  clamp(2.9375rem, -0.7768rem + 7.7381vw, 6.1875rem);
+        padding-inline: 0;
     }
 
     .main {
         padding: 0;
+        margin-block-end: clamp(var(--space-400), 0.8571rem + 2.381vw, var(--space-600));
     }
 }
 
