@@ -11,7 +11,7 @@
     cursor: pointer;
 
     &__value {
-        max-inline-size: 75%;
+        max-inline-size: 60%;
     }
 
     &__letter {
@@ -84,6 +84,14 @@
             content: "";
             position: absolute;
             background-image: url("/images/icon-error.svg");
+        }
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .option {
+        &__value {
+            max-inline-size: 75%;
         }
     }
 }
