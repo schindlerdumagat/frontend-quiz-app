@@ -6,7 +6,7 @@ import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 
 function App() {
-  const [data, setData] = useState(null);
+  const [quizzes, setQuizzes] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [score, setScore] = useState(null);
 
@@ -19,7 +19,7 @@ function App() {
         return res.json();
       })
       .then((data) => {
-        setData(data.quizzes);
+        setQuizzes(data.quizzes);
       })
       .catch((err) => {
         console.error(err);
@@ -31,7 +31,7 @@ function App() {
   }
 
   function handleSubjectClick(subjectIndex) {
-    setSelectedSubject(data[subjectIndex]);
+    setSelectedSubject(quizzes[subjectIndex]);
   }
 
   function handlePlayAgain() {
@@ -41,8 +41,8 @@ function App() {
 
   return (
     <Layout subject={selectedSubject}>
-      {data && !selectedSubject && data.length !== 0 && (
-        <Home subjects={data} onSubjectClick={handleSubjectClick} />
+      {quizzes && !selectedSubject && quizzes.length !== 0 && (
+        <Home subjects={quizzes} onSubjectClick={handleSubjectClick} />
       )}
       {selectedSubject && score === null && <Quiz questions={selectedSubject.questions} onViewScoreClick={handleViewScore} />}
       {selectedSubject && score !== null && <Result subject={selectedSubject} score={score} onPlayAgain={handlePlayAgain}/>}

@@ -14,14 +14,12 @@ export default function ThemeToggle() {
 
     return (
         <div className="toggle-container">
-            {/* <img className="theme-logo" src="/images/icon-sun-dark.svg" alt="" /> */}
             <span className="sun"></span>
-            <label className="switch">
-                <input type="checkbox" onChange={toggleTheme} />
+            <label htmlFor="theme-toggle" className="switch">
+                <input id="theme-toggle" type="checkbox" onChange={toggleTheme} />
                 <span className="slider round"></span>
             </label>
             <span className="moon"></span>
-            {/* <img className="theme-logo" src="/images/icon-moon-dark.svg" alt="" /> */}
         </div>
     )
 }

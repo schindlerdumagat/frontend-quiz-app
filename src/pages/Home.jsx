@@ -20,7 +20,7 @@ export default function Home({ subjects, onSubjectClick }) {
         </h1>
         <p className="home__description">Pick a subject to get started.</p>
       </div>
-      <ul className="home__subjects" role="list">
+      <ul className="home__subjects">
         {subjectList}
       </ul>
     </div>

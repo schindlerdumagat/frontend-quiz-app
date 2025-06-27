@@ -21,6 +21,8 @@
         text-align: center;
         padding: clamp(var(--space-400), 1.0458rem + 4.0712vw, var(--space-600));
         margin-block-end: clamp(var(--space-200), 0.0458rem + 4.0712vw, var(--space-400));
+        background-color: var(--bg-button);
+        border-radius: clamp(0.75rem, 0.0344rem + 3.0534vw, 1.5rem);;
     }
 
     &__score {

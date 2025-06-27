@@ -6,7 +6,7 @@
     &__title {
         font-size: var(--text-xl);
         font-weight: 300;
-        margin-bottom: clamp(var(--space-200), -1.2857rem + 4.7619vw, var(--space-600));
+        margin-block-end: clamp(var(--space-200), -1.2857rem + 4.7619vw, var(--space-600));
     }
 
     &__title-highlight {
