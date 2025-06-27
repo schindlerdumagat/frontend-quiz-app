@@ -20,8 +20,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 8px;
-        width: clamp(2.5rem, 24.7328px + 4.0712vw, 3.5rem);
-        height: clamp(2.5rem, 24.7328px + 4.0712vw, 3.5rem);
+        width: clamp(2.5rem, calc(24.7328px + 4.0712vw), 3.5rem);
+        height: clamp(2.5rem, calc(24.7328px + 4.0712vw), 3.5rem);
         background-color: var(--clr-grey-50);
         color: var(--clr-grey-500);
     }
