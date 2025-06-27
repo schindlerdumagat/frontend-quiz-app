@@ -10,8 +10,8 @@
 
 .switch {
   position: relative;
-  width: clamp(32px, 16.7328px + 4.0712vw, 48px);
-  height: clamp(20px, 12.3664px + 2.0356vw, 28px);
+  width: clamp(2rem, 16.7328px + 4.0712vw, 3rem);
+  height: clamp(1.25rem, 12.3664px + 2.0356vw, 1.75rem);
 }
 
 .switch input { 
@@ -30,8 +30,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: clamp(12px, 4.3664px + 2.0356vw, 20px);
-  width: clamp(12px, 4.3664px + 2.0356vw, 20px);
+  height: clamp(0.75rem, 4.3664px + 2.0356vw, 1.25rem);
+  width: clamp(0.75rem, 4.3664px + 2.0356vw, 1.25rem);
   left: 4px;
   bottom: 4px;
   background-color: var(--clr-white);
@@ -65,7 +65,7 @@ input:checked + .slider:before {
 .sun, .moon {
   background-size: contain;
   background-repeat: no-repeat;
-  height: clamp(16px, 8.3664px + 2.0356vw, 24px);
+  height: clamp(1rem, 8.3664px + 2.0356vw, 1.5rem);
   width: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
 }
 
