@@ -76,3 +76,10 @@ input:checked + .slider:before {
 .moon {
   background-image: var(--moon-icon);
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .slider:before {
+    -webkit-transition: none;
+    transition: none;
+  }
+}

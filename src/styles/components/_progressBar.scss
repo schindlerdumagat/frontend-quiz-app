@@ -14,3 +14,9 @@
   transition: width 0.3s ease;
   border-radius: 10px;
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .progress-fill {
+    transition: none;
+  }
+}
