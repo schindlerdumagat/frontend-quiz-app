@@ -5,13 +5,13 @@
 }
 
 .theme-logo {
-  height: clamp(16px, 8.3664px + 2.0356vw, 24px);
+  height: clamp(1rem, 0.523rem + 2.0356vw, 1.5rem);
 }
 
 .switch {
   position: relative;
-  width: clamp(2rem, 16.7328px + 4.0712vw, 3rem);
-  height: clamp(1.25rem, 12.3664px + 2.0356vw, 1.75rem);
+  width: clamp(2rem, 1.046rem + 4.0712vw, 3rem);
+  height: clamp(1.25rem, 0.773rem + 2.0356vw, 1.75rem);
 }
 
 .switch input { 
@@ -30,8 +30,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: clamp(0.75rem, 4.3664px + 2.0356vw, 1.25rem);
-  width: clamp(0.75rem, 4.3664px + 2.0356vw, 1.25rem);
+  height: clamp(0.75rem, 0.273rem + 2.0356vw, 1.25rem);
+  width: clamp(0.75rem, 0.273rem + 2.0356vw, 1.25rem);
   left: 4px;
   bottom: 4px;
   background-color: var(--clr-white);
@@ -48,9 +48,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(clamp(13px, 6.3206px + 1.7812vw, 20px));
-  -ms-transform: translateX(clamp(13px, 6.3206px + 1.7812vw, 20px));
-  transform: translateX(clamp(13px, 6.3206px + 1.7812vw, 20px));
+  -webkit-transform: translateX(clamp(0.813rem, 0.395rem + 1.7812vw, 1.25rem));
+  -ms-transform: translateX(clamp(0.813rem, 0.395rem + 1.7812vw, 1.25rem));
+  transform: translateX(clamp(0.813rem, 0.395rem + 1.7812vw, 1.25rem));
 }
 
 /* Rounded sliders */
@@ -65,7 +65,7 @@ input:checked + .slider:before {
 .sun, .moon {
   background-size: contain;
   background-repeat: no-repeat;
-  height: clamp(1rem, 8.3664px + 2.0356vw, 1.5rem);
+  height: clamp(1rem, 0.523rem + 2.0356vw, 1.5rem);
   width: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
 }
 
