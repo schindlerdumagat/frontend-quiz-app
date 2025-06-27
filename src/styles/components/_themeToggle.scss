@@ -79,7 +79,7 @@ input:checked + .slider:before {
 
 @media screen and (prefers-reduced-motion: reduce) {
   .slider:before {
-    -webkit-transition: none;
-    transition: none;
+    -webkit-transition: unset;
+    transition: unset;
   }
 }

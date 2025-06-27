@@ -17,6 +17,6 @@
 
 @media screen and (prefers-reduced-motion: reduce) {
   .progress-fill {
-    transition: none;
+    transition: unset;
   }
 }
