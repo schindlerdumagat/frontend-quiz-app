@@ -26,8 +26,8 @@ function App() {
       });
   }, []);
 
-  function handleViewScore(score) {
-    setScore(score);
+  function handleViewScore(userScore) {
+    setScore(userScore);
   }
 
   function handleSubjectClick(subjectIndex) {

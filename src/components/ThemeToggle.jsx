@@ -15,8 +15,8 @@ export default function ThemeToggle() {
     return (
         <div className="toggle-container">
             <span className="sun"></span>
-            <label htmlFor="theme-toggle" className="switch">
-                <input id="theme-toggle" type="checkbox" onChange={toggleTheme} />
+            <label className="switch">
+                <input type="checkbox" onChange={toggleTheme} aria-label="Toggle Theme" />
                 <span className="slider round"></span>
             </label>
             <span className="moon"></span>
