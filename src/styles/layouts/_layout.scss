@@ -1,8 +1,8 @@
 body {
-    background-color: var(--clr-grey-50);
+    background-color: var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/images/pattern-background-mobile-light.svg");
+    background-image: var(--bg-image-mobile);
 }
 
 .layout {
@@ -36,7 +36,7 @@ main {
 
     body {
         background-size: auto;
-        background-image: url("/images/pattern-background-tablet-light.svg");
+        background-image: var(--bg-image-tablet);
     }
 
     .header {
@@ -53,7 +53,7 @@ main {
 
     body {
         background-size: cover;
-        background-image: url("/images/pattern-background-desktop-light.svg");
+        background-image: var(--bg-image-desktop);
     }
 
     .layout {

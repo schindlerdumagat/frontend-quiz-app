@@ -9,6 +9,7 @@
     box-shadow: 0 16px 40px 0 rgba(#8FA0C1, 14%);
     width: 100%;
     cursor: pointer;
+    background-color: var(--bg-button);
 
     &__value {
         max-inline-size: 60%;

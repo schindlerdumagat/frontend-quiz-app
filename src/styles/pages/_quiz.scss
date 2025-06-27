@@ -6,7 +6,7 @@
     &__number {
         font-size: var(--text-sm);
         font-style: italic;
-        color: var(--clr-grey-500);
+        color: var(--description-color);
         margin-block-end: clamp(var(--space-200), 0.5229rem + 2.0356vw, var(--space-300));
     }
 
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--space-100);
-    color: var(--clr-red-500);
+    color: var(--error-color);
     margin: 0 auto;
 }
 

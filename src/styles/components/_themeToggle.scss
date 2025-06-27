@@ -61,3 +61,18 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.sun, .moon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: clamp(16px, 8.3664px + 2.0356vw, 24px);
+  width: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
+}
+
+.sun {
+  background-image: var(--sun-icon);
+}
+
+.moon {
+  background-image: var(--moon-icon);
+}
