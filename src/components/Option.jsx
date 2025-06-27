@@ -20,7 +20,7 @@ export default function Option({
   return (
     <button type="button" disabled={disabled} className={className} onClick={onOptionClick}>
       <span className="option__letter">{letter}</span>
-      <p className="option__value">{children}</p>
+      <span className="option__value">{children}</span>
     </button>
   );
 }
